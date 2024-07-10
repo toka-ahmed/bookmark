@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-1 py-1">
+        <h1 class="layer m-auto mb-4 text-center">Bookmarker</h1>
+        <hr class="dotted mt-5">
+        <div class="d-flex m-auto justify-content-center align-items-center w-75 text-center mt-3 degrede-color">
+            <i class="fa-solid fa-bookmark align-self-lg-auto"></i>
+            <h2 class="mx-2"> Bookmark your favorite sites </h2>
+            <i class="fa-solid fa-bookmark align-self-lg-auto"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-book"></i>
+            <label for="name" class="family">Site Name</label>
+            <input type="text" id="name" placeholder="Bookmark Name" class="form-control mt-2 focus-ring focus-ring-warning ">
+        </div>
+        <div class="mt-3">
+            <i class="fa-solid fa-link"></i>
+            <label for="url" class="family">Site URL</label>
+            <input type="text" id="url" placeholder="Website URL" class="form-control mt-2 focus-ring focus-ring-warning">
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <input class="btn btn-primary mt-4 px-5" type="submit" value="Submit" onclick="addProduct()">
+        </div>
+        <hr class="dotted mt-5 m-4 ">
+        <table class="table-light text-center table ">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myRow">
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body{
+    background-color: #f7ecde;
+}
+
+h1{
+    max-width: 260px;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 70px;
+    position: relative;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    background-color: #fec260;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+h1:hover::before{
+height: 35%;
+}
+hr.dotted {
+    border: none;
+    border-top: 3px dotted #000;
+   
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+  
+  }
+  .degrede-color{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+ 
+  
+  .family{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 5px;
+  }
+  .btn-primary {
+    background-color: #d1512d;
+    border: #bb4120;
+  }
+   .btn:hover{
+    background-color: #bb4120;
+  }
+  .btn-success{
+    background-color: #9eb23b;
+  }
+  table  .green .btn:hover {
+    background-color: #6e8018;
+  }
+  .error-border {
+    border: 1px solid red;
+}
+
